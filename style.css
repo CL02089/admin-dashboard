@@ -2,3 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
+.logo img {
+  filter: brightness(5) invert(0.7);
+}
