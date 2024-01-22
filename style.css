@@ -3,6 +3,159 @@
   padding: 0;
 }
 
-.logo img {
-  filter: brightness(5) invert(0.7);
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo img,
+.side-element img {
+  filter: brightness(5) invert(1);
+}
+
+.container {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.header {
+  grid-column: 2/3;
+}
+
+.sidebar {
+  grid-row: 1 /3;
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 5rem 1.5fr 1fr 2fr;
+  background-color: #1992d4;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.search-logo {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+}
+
+.searchbar {
+  padding-right: 5rem;
+  display: grid;
+  grid-template-columns: 0.3fr 5fr;
+  gap: 15px;
+}
+
+.searchbar input {
+  border-radius: 10px;
+  background-color: #e2e8f0;
+  padding: 5px;
+}
+
+.searchbar img {
+  align-items: center;
+}
+
+.logos {
+  display: grid;
+
+  grid-template-columns: 50px 50px minmax(30px, 1fr);
+  align-items: center;
+  justify-items: end;
+}
+
+.logos h3 {
+  font-size: 1.3rem;
+  justify-self: center;
+}
+
+.userinf-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.userinfo {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.userinfo img {
+  grid-row: 1 /3;
+  align-self: center;
+}
+
+.userinfo p {
+  align-self: end;
+  font-weight: 600;
+}
+
+.userinfo h2 {
+  align-self: baseline;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.buttons button {
+  padding: 0.8rem;
+  border-radius: 18px;
+  border: none;
+  background-color: #1992d4;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  justify-self: start;
+  color: #ffffff;
+}
+
+.side-element a {
+  text-decoration: none;
+}
+
+.navigation-1 {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.side-element a {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.navigation-2 {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
